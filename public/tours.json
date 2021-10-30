@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Eiffel Tower,Paris",
+    "img": "https://i.ibb.co/CvfYV0K/eiffel.jpg",
+    "description": "The Eiffel Tower has long been an icon of Paris and one of the first things that come to mind when people think of the city (even France).You might think that the Eiffel Tower’s popularity makes it a “touristy” attraction, but it really is not.Touristy or not, a visit to Paris would not be complete without feasting your eyes on the world’s most recognized structure.",
+    "price": "100"
+  },
+  {
+    "title": "Statue Of Liberty, New York City",
+    "img": "https://i.ibb.co/qgsTgTX/staue-of-liberty.jpg",
+    "description": "As two of the most popular attractions in New York City, the Statue of Liberty and Ellis Island are probably on your must-see list .There’s a lot to experience at each place, plus a few guidelines for guests, so I’ve rounded up a list of do’s and don’ts to help make your trip a breeze.",
+    "price": "180"
+  },
+  {
+    "title": "The Colosseum, Rome",
+    "img": "https://i.ibb.co/cw08HNP/colosseum.jpg",
+    "description": "In a city full of ancient ruins, no other structure in Rome is as iconic as the Colosseum.The Colosseum has been regarded as a symbol of Rome since the Middle Ages.Over 6 million people visit the Colosseum in Rome each year. In 2018, the Colosseum was the world’s most visited tourist attraction, welcoming 7.4 million people.",
+    "price": "130"
+  },
+  {
+    "title": "Machu Picchu, Peru",
+    "img": "https://i.ibb.co/gd5sdz4/machu.jpg",
+    "description": "The wonderful ruins of Machu Picchu are one of the best shows and attractions in Peru. There is no denying that this complex surrounded by peaks and mountains is one of the most incredible views to appreciate. Not for nothing was it classified as one of the seven wonders of the modern world. And we know that words and photos cannot always sum up this incredible site. Every professional or amateur traveler has always wanted to set foot in the renowned Machu Picchu.",
+    "price": "110"
+  },
+  {
+    "title": "The Tajmahal, India",
+    "img": "https://i.ibb.co/J2q7kds/tajmahal.jpg",
+    "description": "Taj Mahal in Agra, one of the most-admired seven wonders in the world is a classic tale of declaration of love by a Mughal Emperor Shahjahan for his wife, Mumtaz. The artistic masterpiece was built by Shahjahan after the demise of his wife during child birth, as an apparent token of love in her memory.The moderate and comfortable weather during this time slot makes it the most pleasant time of the year to visit Taj Mahal.",
+    "price": "60"
+  },
+  {
+    "title": "Great Wall Of China",
+    "img": "https://i.ibb.co/7JKgFHK/Great-Wall-of-China.jpg",
+    "description": "The Great Wall of China actually consists of several different walls brought together after China’s warring states unified under the rule of Emperor Qin.There are 20 towers on the Mutianyu Great Wall snaking the ridge for about 3000 meters. The watch towers at the Mutianyu Great Wall are distributed at short intervals. The 20 watch towers are numbered from right to left, or from east to west. The 20th tower is highest point of the Mutianyu Great Wall.",
+    "price": "140"
+  }
+]
