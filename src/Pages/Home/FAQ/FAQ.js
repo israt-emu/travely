@@ -3,7 +3,6 @@ import img from "../../../images/faq.jpg";
 
 const FAQ = () => {
   //state and function for accordion
-  const [expanded, setExpanded] = useState(false);
   const [firstQues, setfirstQues] = useState(true);
   const [secondQues, setSecondQues] = useState(false);
   const [thirdQues, setThirdQues] = useState(false);
@@ -58,10 +57,10 @@ const FAQ = () => {
                 />
                 <div className="flex items-center justify-between">
                   <label
-                    className="block p-5 leading-normal cursor-pointer"
+                    className="block p-5 leading-normal cursor-pointer font-bold"
                     for="tab-multi-one"
                   >
-                    Can I take my Own food for the flight?
+                    HOW DO I CANCEL A TRIP?
                   </label>
                   <button
                     className={`mr-4 text-2xl ${
@@ -86,10 +85,10 @@ const FAQ = () => {
                   }`}
                 >
                   <p className="p-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Tenetur, architecto, explicabo perferendis nostrum, maxime
-                    impedit atque odit sunt pariatur illo obcaecati soluta
-                    molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                    Call us right away. If it’s after normal business hours,
+                    please contact the next involved travel supplier (airline,
+                    hotel, tour operator, cruise line) to cancel any
+                    reservations you will not be able to use.
                   </p>
                 </div>
               </div>
@@ -105,10 +104,10 @@ const FAQ = () => {
                 />
                 <div className="flex items-center justify-between">
                   <label
-                    className="block p-5 leading-normal cursor-pointer"
+                    className="block p-5 leading-normal cursor-pointer font-bold"
                     for="tab-multi-one"
                   >
-                    Will you Provide tour guide with us?
+                    HOW DO I KNOW I CAN TRUST THIS TRAVEL VENDOR?
                   </label>
                   <button
                     className={`mr-4 text-2xl ${
@@ -133,10 +132,11 @@ const FAQ = () => {
                   }`}
                 >
                   <p className="p-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Tenetur, architecto, explicabo perferendis nostrum, maxime
-                    impedit atque odit sunt pariatur illo obcaecati soluta
-                    molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                    Professional Travel a Travely Company is extremely cautious
+                    when it comes to choosing our business partners and vendors.
+                    This vetting of travel suppliers and support of the ‘good
+                    ones’ over the past 50+ years has given us preferred access
+                    to the world’s top trusted suppliers.
                   </p>
                 </div>
               </div>
@@ -152,10 +152,10 @@ const FAQ = () => {
                 />
                 <div className="flex items-center justify-between">
                   <label
-                    className="block p-5 leading-normal cursor-pointer"
+                    className="block p-5 leading-normal cursor-pointer font-bold"
                     for="tab-multi-one"
                   >
-                    How Can I Pay for the flight?
+                    DO I NEED TRAVEL INSURANCE?
                   </label>
                   <button
                     className={`mr-4 text-2xl ${
@@ -180,10 +180,11 @@ const FAQ = () => {
                   }`}
                 >
                   <p className="p-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Tenetur, architecto, explicabo perferendis nostrum, maxime
-                    impedit atque odit sunt pariatur illo obcaecati soluta
-                    molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                    Travel insurance is available and recommended to protect
+                    your travel investment. Many trips, such as tours and
+                    cruises, involve non-refundable funds paid months in
+                    advance. Travel insurance protects you from losing this
+                    investment.
                   </p>
                 </div>
               </div>
@@ -199,10 +200,10 @@ const FAQ = () => {
                 />
                 <div className="flex items-center justify-between">
                   <label
-                    className="block p-5 leading-normal cursor-pointer"
+                    className="block p-5 leading-normal cursor-pointer font-bold"
                     for="tab-multi-one"
                   >
-                    How do I choose my seats on the plane?
+                    DOES IT COST MONEY TO GET A QUOTE?
                   </label>
                   <button
                     className={`mr-4 text-2xl ${
@@ -227,10 +228,9 @@ const FAQ = () => {
                   }`}
                 >
                   <p className="p-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Tenetur, architecto, explicabo perferendis nostrum, maxime
-                    impedit atque odit sunt pariatur illo obcaecati soluta
-                    molestias iure facere dolorum adipisci eum? Saepe, itaque.
+                    No, there is no fee for our vacation planning services as
+                    the travel vendors involved recognize our value and
+                    compensate us from the gross amount paid
                   </p>
                 </div>
               </div>

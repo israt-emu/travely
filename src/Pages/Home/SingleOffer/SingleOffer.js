@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SingleOffer = ({ tour }) => {
+  //destructuring
   const { title, img, description, price, _id } = tour;
   return (
     <div className="p-5 shadow-xl">

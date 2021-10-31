@@ -65,6 +65,7 @@ const Header = () => {
               )}
             </li>
           </ul>
+          {/* menu icon  */}
           <div className="lg:hidden">
             <button
               aria-label="Open Menu"
@@ -117,6 +118,7 @@ const Header = () => {
                       </button>
                     </div>
                   </div>
+                  {/* Mobile menu  */}
                   <nav>
                     <ul className="space-y-4">
                       <li>

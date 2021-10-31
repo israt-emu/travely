@@ -14,13 +14,14 @@ const PlaceOrder = () => {
       .then((data) => setTour(data));
   }, []);
   const { title, img, description, price } = tour;
+  //react hook form
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     data.status = "Pending";
     data.tour = title;
     data.img = img;
     data.price = price;
-
+    //post request
     fetch("https://murmuring-journey-94350.herokuapp.com/visitors", {
       method: "POST",
       headers: {

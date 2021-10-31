@@ -4,6 +4,7 @@ import SingleOffer from "../SingleOffer/SingleOffer";
 const Offerings = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [tours, setTours] = useState([]);
+  //data fetching for offerings
   useEffect(() => {
     setIsLoading(true);
     fetch("https://murmuring-journey-94350.herokuapp.com/offerings")

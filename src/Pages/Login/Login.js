@@ -7,6 +7,9 @@ const Login = () => {
   const location = useLocation();
   const history = useHistory();
   const redirect_uri = location.state?.from || "/home";
+
+  //sign in using google
+
   const handleGooglesignIn = () => {
     googleSignIn()
       .then((result) => {
@@ -30,6 +33,7 @@ const Login = () => {
           <img src={googleLogo} alt="" className="w-6 mr-2" />
           Conitnue With Google
         </button>
+        <p className="text-lg font-bold text-red-700">{error}</p>
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import { useForm } from "react-hook-form";
 
 const AddOffer = () => {
   const { register, handleSubmit, reset } = useForm();
+
+  //new offer add
   const onSubmit = (data) => {
     fetch("https://murmuring-journey-94350.herokuapp.com/offerings", {
       method: "POST",
@@ -21,7 +23,7 @@ const AddOffer = () => {
   };
   return (
     <div className="lg:w-4/5 w-11/12 mx-auto bg-blue-900 py-10 mt-6 md:mt-0">
-      <h1 className="text-blue-200 text-3xl font-semibold text-center py-6">
+      <h1 className="text-blue-200 md:text-3xl text-2xl font-semibold text-center py-6">
         Add a New Tour Plan
       </h1>
       <form

@@ -1,9 +1,10 @@
 import React from "react";
 
 const ManageSingle = (props) => {
-  const { _id, img, price, tour, status } = props?.tour;
+  const { _id, img, address, tour, status, name } = props?.tour;
 
   const setChange = props.setChange;
+  const change = props.change;
   //delete booking tour
   const handleDelete = () => {
     const proceed = window.confirm("Are you sure you want to cancel booking?");
@@ -15,7 +16,7 @@ const ManageSingle = (props) => {
         .then((data) => {
           if (data.deletedCount) {
             alert("Canceled Successfully");
-            setChange(true);
+            setChange(!change);
           }
         });
     }
@@ -33,7 +34,7 @@ const ManageSingle = (props) => {
       .then((data) => {
         if (data.modifiedCount) {
           alert("Booking Approved Successfully!");
-          setChange(true);
+          setChange(!change);
         }
       });
   };
@@ -54,9 +55,8 @@ const ManageSingle = (props) => {
         </div>
         <div>
           <h1 className="text-xl font-bold my-2">{tour}</h1>
-          <h1 className="text-lg font-bold text-blue-900">
-            ${price}/per person
-          </h1>
+          <h1 className="text-lg font-bold text-blue-900">Booked by {name}</h1>
+          <h1 className="text-lg my-1 break-words">Location:{address}</h1>
           {status === "Pending" ? (
             <p className="text-red-500 font-bold">Booking {status}...</p>
           ) : (

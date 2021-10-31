@@ -15,10 +15,12 @@ const useFirebase = () => {
   const [isLoading, setIsLoading] = useState(true);
   const provider = new GoogleAuthProvider();
   const auth = getAuth();
+  //sign in with google
   const googleSignIn = () => {
     setIsLoading(true);
     return signInWithPopup(auth, provider);
   };
+  //log out
   const logOut = () => {
     setIsLoading(true);
     signOut(auth)
