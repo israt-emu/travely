@@ -21,7 +21,7 @@ const PlaceOrder = () => {
     data.img = img;
     data.price = price;
 
-    fetch("http://localhost:5000/visitors", {
+    fetch("https://murmuring-journey-94350.herokuapp.com/visitors", {
       method: "POST",
       headers: {
         "content-type": "application/json",

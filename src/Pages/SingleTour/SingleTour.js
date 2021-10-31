@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react/cjs/react.development";
+import React, { useState } from "react";
 
 const SingleTour = (props) => {
   const [isTour, setIsTour] = useState(true);
@@ -7,7 +6,7 @@ const SingleTour = (props) => {
   const handleDelete = () => {
     const proceed = window.confirm("Are you sure you want to cancel booking?");
     if (proceed) {
-      fetch(`http://localhost:5000/visitors/${_id}`, {
+      fetch(`https://murmuring-journey-94350.herokuapp.com/visitors/${_id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())

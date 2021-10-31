@@ -20,7 +20,7 @@ const Login = () => {
       .finally(() => setIsLoading(false));
   };
   return (
-    <div className="md:w-2/5 mx-auto bg-blue-900 text-center mt-20 py-12 px-6 rounded shadow-xl">
+    <div className="md:w-2/5 mx-auto bg-blue-900 text-center my-20 py-12 px-6 rounded shadow-xl">
       <h1 className="text-white text-2xl mb-3">Please Login!</h1>
       <div>
         <button

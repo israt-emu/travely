@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react/cjs/react.development";
 
 const ManageSingle = (props) => {
   const { _id, img, price, tour, status } = props?.tour;
@@ -9,7 +8,7 @@ const ManageSingle = (props) => {
   const handleDelete = () => {
     const proceed = window.confirm("Are you sure you want to cancel booking?");
     if (proceed) {
-      fetch(`http://localhost:5000/visitors/${_id}`, {
+      fetch(`https://murmuring-journey-94350.herokuapp.com/visitors/${_id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -23,7 +22,7 @@ const ManageSingle = (props) => {
   };
   //status updating
   const handleApproved = () => {
-    fetch(`http://localhost:5000/visitors/${_id}`, {
+    fetch(`https://murmuring-journey-94350.herokuapp.com/visitors/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

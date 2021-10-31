@@ -22,8 +22,8 @@ const Offerings = () => {
   }
   return (
     <div className="lg:w-11/12 md:w-4/5 w-11/12 mx-auto py-14">
-      <h1 className="text-4xl text-center mb-6"> Our offerings</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <h1 className="text-4xl text-center mb-6 py-6"> Our offerings</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
         {tours.map((tour) => (
           <SingleOffer key={tour._id} tour={tour}></SingleOffer>
         ))}

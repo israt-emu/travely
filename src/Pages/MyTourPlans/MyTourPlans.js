@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-
-import { useState } from "react/cjs/react.development";
+import React, { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import SingleTour from "../SingleTour/SingleTour";
 
@@ -9,7 +7,9 @@ const MyTourPlans = () => {
   const { user } = useAuth();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/visitors/${user.email}`)
+    fetch(
+      `https://murmuring-journey-94350.herokuapp.com/visitors/${user.email}`
+    )
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, [user.email]);
