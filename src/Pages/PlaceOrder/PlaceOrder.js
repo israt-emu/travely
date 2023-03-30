@@ -1,28 +1,28 @@
-import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
-import { useParams } from "react-router";
+import React, {useEffect, useState} from "react";
+import {useForm} from "react-hook-form";
+import {useParams} from "react-router";
 import useAuth from "../../hooks/useAuth";
 
 const PlaceOrder = () => {
-  const { id } = useParams();
-  const { user } = useAuth();
+  const {id} = useParams();
+  const {user} = useAuth();
   const [tour, setTour] = useState({});
   ///fetching single item by id
   useEffect(() => {
-    fetch(`https://murmuring-journey-94350.herokuapp.com/offerings/${id}`)
+    fetch(`https://travely-server.onrender.com/offerings/${id}`)
       .then((res) => res.json())
       .then((data) => setTour(data));
   }, []);
-  const { title, img, description, price } = tour;
+  const {title, img, description, price} = tour;
   //react hook form
-  const { register, handleSubmit, reset } = useForm();
+  const {register, handleSubmit, reset} = useForm();
   const onSubmit = (data) => {
     data.status = "Pending";
     data.tour = title;
     data.img = img;
     data.price = price;
     //post request
-    fetch("https://murmuring-journey-94350.herokuapp.com/visitors", {
+    fetch("https://travely-server.onrender.com/visitors", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -39,41 +39,18 @@ const PlaceOrder = () => {
   };
   return (
     <div className="w-11/12 mx-auto py-14">
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 flex items-center">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 items-center">
         <div className="bg-blue-900 p-10 rounded shadow-lg">
           <form onSubmit={handleSubmit(onSubmit)}>
-            <input
-              type="text"
-              defaultValue={user.displayName || ""}
-              {...register("name", { required: true, maxLength: 20 })}
-              className="block w-full py-2 mt-2 rounded px-3"
-            />
+            <input type="text" defaultValue={user.displayName || ""} {...register("name", {required: true, maxLength: 20})} className="block w-full py-2 mt-2 rounded px-3" />
             <br />
-            <input
-              type="email"
-              defaultValue={user.email || ""}
-              {...register("email")}
-              className="block w-full py-2 mt-1 rounded px-3"
-            />
+            <input type="email" defaultValue={user.email || ""} {...register("email")} className="block w-full py-2 mt-1 rounded px-3" />
             <br />
-            <input
-              type="text"
-              {...register("address")}
-              className="block w-full py-2 mt-1 rounded px-3"
-              placeholder="Your Address"
-            />
+            <input type="text" {...register("address")} className="block w-full py-2 mt-1 rounded px-3" placeholder="Your Address" />
             <br />
-            <input
-              type="number"
-              {...register("phone")}
-              className="block w-full py-2 mt-1 rounded px-3"
-              placeholder="Your Phone"
-            />
+            <input type="number" {...register("phone")} className="block w-full py-2 mt-1 rounded px-3" placeholder="Your Phone" />
             <br />
-            <button
-              type="submit"
-              className="bg-blue-300 text-blue-900 font-bold px-4 py-2 rounded"
-            >
+            <button type="submit" className="bg-blue-300 text-blue-900 font-bold px-4 py-2 rounded">
               Place Order
             </button>
           </form>
